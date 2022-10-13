@@ -1,0 +1,283 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body
+{
+    font-family: sans-serif;
+    background-color:peachpuff;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 5px 10 px rgba(0,0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+header .navbar{
+    display: flex;
+    background-color:rgb(236, 94, 43);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center; 
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    nav-left: auto;
+    cursor: pointer;
+    }
+
+    header .navbar ul{
+      list-style: none;
+  }
+  
+  header .navbar ul li{
+      position: relative;
+      float: left;
+  }
+  header .navbar ul li a{
+      font-size: 20px;
+      padding: 20px;
+      color: rgb(248, 243, 243);
+      display: block;
+  }
+  
+  header .navbar ul li a:hover{
+      background: green;
+      color: white;
+  }
+  
+  header .navbar ul li ul{
+      position: absolute;
+      left: 0;
+      width: 200px;
+      background: white;
+      display: none;
+  
+  }
+  
+  header .navbar ul li ul li{
+      width: 100%;
+      border-top: 1px solid gray;
+  
+  }
+  
+  header .navbar ul li:hover > ul{
+      display: initial;
+  }
+  
+    .logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 60%;
+    border: 2px;
+    border-radius: 70px;
+    background-color: aliceblue;
+}
+
+    img.center {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        display:block;
+        position: relative;
+        top: 200px;
+        }
+        h1.center2 {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        color: rgb(252, 250, 249);
+        font-family: "Myriad Pro";
+        text-align: center;
+        top: 50px;
+        position: relative;
+    }
+    a.center3 {
+        margin: auto;
+        width: 60%;
+        padding: 10px;
+        color: rgb(236, 127, 31);
+        font-family: "Calibri Light";
+        text-align: center;
+        top: 50px;
+        position: relative;
+        font-size: 25px;
+        color: #EEB300;
+    }
+    #test h1 {
+        margin-bottom: auto;
+        font-size: 40px;
+        text-shadow: #EEB300;
+        text-align: center;
+    
+        -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadein 5s; /* Firefox < 16 */
+            -ms-animation: fadein 6s; /* Internet Explorer */
+             -o-animation: fadein 7s; /* Opera < 12.1 */
+                animation: fadein 8s;
+    }
+  10
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+
+  #animation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    overflow: hidden;
+  
+    background: black;
+    
+  }
+
+  /* falling rain animations */
+/* starts here */
+i
+{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation:  animate 5s linear infinite;
+
+}
+
+i:nth-child(3n+1){
+    background: linear-gradient(transparent, orange );
+
+}
+i:nth-child(3n+2){
+    background: linear-gradient(transparent, green);
+    
+}
+i:nth-child(3n+3){
+    background: linear-gradient(transparent, red); 
+}
+i:nth-child(3n+4){
+    background: linear-gradient(transparent, blue );
+
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: translateY(-20px);
+    }
+    100%
+    {
+        transform: translateY(calc(20vh + 200px));
+    }
+    0%
+    {
+        transform: translateY(-15px);
+    }
+}
+
+
+  /* menu bar  */
+  /* 
+   */
+   header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+
+   #menu-bar{
+    display: none;
+
+}
+
+header label{
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 991px){
+    
+    header{
+        padding: 20px;
+    }
+
+    header label{
+        display: initial;
+
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background-color: rgb(241, 121, 88);
+        border-top: 1px solid gray;
+        display: none;
+
+    }
+
+    header .navbar ul li{
+        width: 100%;
+
+    }
+
+
+    #menu-bar:checked ~ .navbar{
+        display: inline-block;
+    }
+
+
+}
+
+
+/* ends here */
