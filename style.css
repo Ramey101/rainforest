@@ -176,7 +176,7 @@ header .navbar{
     min-height: 50vh;
     overflow: hidden;
   
-    background: black;
+    background-image: url(/img/animation.jpg);
     
   }
 
