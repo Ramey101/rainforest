@@ -3,7 +3,7 @@ var ctx = c.getContext("2d");
 var w = c.width = window.innerWidth;
 var h = c.height = window.innerHeight/1.5;
 var clearColor = 'rgba(0, 0, 0, .1)';
-var max = 40;
+var max = 60;
 var drops = [];
 
 function random(min, max) {
@@ -84,7 +84,7 @@ function setup(){
 				var o = new O();
 				o.init();
 				drops.push(o);
-			}, j * 400)
+			}, j * 600)
 		}(i));
 	}
 }
