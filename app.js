@@ -1,7 +1,7 @@
 var c = document.getElementById("canvas-club");
 var ctx = c.getContext("2d");
 var w = c.width = window.innerWidth;
-var h = c.height = window.innerHeight/1.8;
+var h = c.height = window.innerHeight/1.6;
 var clearColor = 'rgba(0, 0, 0, .1)';
 var max = 60;
 var drops = [];
