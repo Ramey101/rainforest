@@ -175,8 +175,8 @@ header .navbar{
     align-items: center;
     min-height: 50vh;
     overflow: hidden;
+    background: black;
   
-    background-image: url(/img/animation.jpg);
     
   }
 
@@ -278,6 +278,4 @@ header label{
 
 
 }
-
-
 /* ends here */
